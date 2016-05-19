@@ -139,7 +139,7 @@ public class MyTreeMap<K, V> implements Map<K, V> {
     public void inOrderAdd(Node current, Set<K> set)
     {
         if (current.left != null) inOrderAdd(current.left, set);
-        set.add(current.key);
+        set.add(current);
         if (current.right != null) inOrderAdd(current.right, set);
     }
 
